@@ -189,7 +189,7 @@ class SitemapGenerator
 
         if (isset($lastModified)) {
             $tmp->setSize(2);
-            $tmp[self::URL_PARAM_LASTMOD] = $lastModified->format(\DateTime::ISO8601);
+            $tmp[self::URL_PARAM_LASTMOD] = $lastModified->format(\DateTime::ATOM);
         }
 
         if (isset($changeFrequency)) {
